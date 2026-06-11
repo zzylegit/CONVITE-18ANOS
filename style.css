@@ -1,0 +1,166 @@
+.btn {
+  padding: 15px 30px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.92)),
+    url("https://picjumbo.com/wp-content/uploads/dark-halloween-background-with-glowing-halloween-pumpkins-free-image.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: white;
+
+  font-family: 'Montserrat', sans-serif;
+
+  padding: 40px 20px;
+}
+
+/* BOTÃO VOLTAR */
+
+.botao{
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  z-index: 1000;
+
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  background: rgba(0, 0, 0, 0.637);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+  letter-spacing: 3px;
+
+  transition: 0.3s;
+
+  backdrop-filter: blur(10px);
+}
+
+.botao:hover {
+  transform: scale(1.05);
+
+  background: rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* TITULO */
+
+.section-title {
+  margin-top: 70px;
+
+  text-align: center;
+
+  font-size: 55px;
+
+  letter-spacing: 10px;
+
+  font-family: 'Cinzel', serif;
+
+  text-shadow:
+    0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* GRID */
+
+.gift-grid {
+  margin-top: 70px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+
+  max-width: 1000px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CARDS */
+
+.gift-card {
+  padding: 35px 20px;
+
+  border-radius: 25px;
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  text-align: center;
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+
+  transition: 0.4s;
+
+  backdrop-filter: blur(10px);
+}
+
+.gift-card:hover {
+  transform:
+    translateY(-8px) scale(1.03);
+
+  box-shadow:
+    0 0 25px rgba(7, 7, 7, 0.08);
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 90px;
+
+  text-align: center;
+
+  opacity: 0.5;
+
+  letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+  .section-title {
+    font-size: 38px;
+    letter-spacing: 5px;
+  }
+
+  .gift-card {
+    font-size: 16px;
+  }
+
+}
